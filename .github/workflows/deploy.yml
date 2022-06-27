@@ -23,7 +23,7 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@master
         with:
-          role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
+          role-to-assume: arn:aws:iam::783542059368:role/CodeDeployRoleforGitHub
           role-session-name: GitHub-Action-Role
           aws-region: ${{ env.AWS_REGION }}
 
